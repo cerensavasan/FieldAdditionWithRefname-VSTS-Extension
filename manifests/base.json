@@ -1,0 +1,33 @@
+{
+    "manifestVersion": 1,
+    "id": "my-first-extension",
+    "publisher": "CerenSavasan",
+    "version": "1.0.100",
+    "name": "Add Name with Reference",
+    "scopes": [
+        "vso.profile",
+        "vso.work",
+        "vso.work_write"
+    ],
+    "description": "A sample Visual Studio Services extension, added ui-fabric-react.min.js to libs",
+    "public": false,
+    "categories": ["Plan and track"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "my-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-web.collection-admin-hub-group"
+            ],
+            "properties": {
+                "name": "My Hub",
+                "uri": "my-hub.html"
+            }
+        }
+    ]
+}

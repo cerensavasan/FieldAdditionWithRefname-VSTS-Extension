@@ -1,0 +1,16 @@
+{
+    "files": [
+        {
+            "path": "../dist/css",
+            "addressable": true
+        },
+        {
+            "path": "../dist/scripts",
+            "addressable": true
+        },
+        {
+            "path": "../dist/my-hub.html",
+            "addressable": true
+        }    
+    ]
+}
