@@ -71,7 +71,7 @@ gulp.task('template', () => {
     return gulp.src('index.html.template')
         .pipe(template(templateValues))
         .pipe(rename(function(path) {
-            path.basename = 'my-hub';
+            path.basename = 'index';
             path.extname = '.html';
         }))
         .pipe(gulp.dest(contentFolder));

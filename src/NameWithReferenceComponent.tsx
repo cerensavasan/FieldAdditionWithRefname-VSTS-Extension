@@ -11,22 +11,30 @@ export class NameWithReferenceComponent extends React.Component<{},
             hideDialog: true
         };
     }
+    /*
+    customization: "inherited"
+    description: ""
+    name: "Potato"
+    referenceName: "Custom.Potato"
+    required: true
+    type: "string"
+    url: "https://codedev.ms/cerensav/_apis/work/processes/8883dec4-484a-4ac4-83fc-3a7403ee3df1/behaviors"
+    */
 
     public render(): JSX.Element {
-        console.log("Inside namerefcomponent render");
         return (
-            <div>
+            <div className="nameComponent">
                 <DefaultButton onClick={this._showDialog} text="Open Dialog" />
                 <Dialog hidden={this.state.hideDialog}
                         onDismiss={this._closeDialog}
                         dialogContentProps={{
                             type: DialogType.normal,
                             title: "Add a Field with Reference Name",
-                            subText: "This field addition allows you to customize the reference name."
+                            subText: "This field addition allows you to assign the reference name."
                         }}
                         modalProps={{
-                            titleAriaId: "myLabelId",
-                            subtitleAriaId: "mySubTextId",
+                            titleAriaId: "createFieldWithRefName-DialogLabelId",
+                            subtitleAriaId: "createFieldWithRefName-DialogSubTextId",
                             isBlocking: false,
                             containerClassName: "ms-dialogMainOverride"
                         }}
@@ -34,6 +42,9 @@ export class NameWithReferenceComponent extends React.Component<{},
                     <form>
                     Field Name:<br/>
                     <input type="text" name="name"/><br/>
+                    Field Type:<br/>
+                    <input type="text" name="type"/><br/>
+                    <br/>
                     Field Reference Name:<br/>
                     <input type="text" name="refname"/>
                     </form>

@@ -8,11 +8,8 @@ class App extends React.Component {
     }
 
     public render(): JSX.Element {
-        console.log("Inside app component render");
         return (
             <div className="hub-view">
-                Inside App.tsx
-                <p>Hi</p>
                 <NameWithReferenceComponent></NameWithReferenceComponent>
             </div>
         );

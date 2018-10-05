@@ -1,23 +1,26 @@
 <html dir="ltr">
 
 <head>
-    <title>Add Name with Reference</title>
+    <title>Add Field with Reference Name</title>
     <%= head %>
     <style>
-        body.my-extension {
+        body.reference-name-extension {
             padding: 10px 20px;
             overflow: auto;
+        }
+        .nameComponent {
+            margin-top: 40px;
         }
     </style>
 
 </head>
 
-<body class="my-extension">
+<body class="reference-name-extension">
     <script type="text/javascript">
         <%= init %>
     </script>
 
-    <h2>Add Name with Reference</h2>
+    <h2>Add a Field with Reference Name</h2>
     <div id="work-item-search-view"></div>
     <div id="react-container"></div>
     <div id="main"></div>

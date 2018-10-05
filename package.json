@@ -1,8 +1,8 @@
 {
-  "name": "my-first-extension",
+  "name": "custom-reference-name-extension",
   "version": "1.0.0",
   "description": "A VSTS extension",
-  "main": "my-hub.html",
+  "main": "index.html",
   "scripts": {
     "build": "tsc -p . && gulp",
     "gBuild": "gulp",
