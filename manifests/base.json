@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "my-first-extension",
     "publisher": "CerenSavasan",
-    "version": "1.0.104",
+    "version": "1.0.116",
     "name": "Add Field to Process with Custom Reference Name",
     "scopes": [
         "vso.profile",

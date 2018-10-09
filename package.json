@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/jquery": "^3.3.10",
     "@types/prop-types": "^15.5.6",
-    "@types/q": "^1.5.1",
+    "@types/q": "0.0.32",
     "@types/react": "^15.6.1",
     "@types/react-dom": "^15.5.2",
     "awesome-typescript-loader": "^5.2.1",
@@ -34,14 +34,14 @@
     "gulp-template": "^5.0.0",
     "gulp-typescript": "^5.0.0-alpha.3",
     "gulp-webpack": "^1.5.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "rimraf": "^2.6.2",
     "source-map-loader": "^0.2.4",
     "tfx-cli": "^0.6.3",
-    "typescript": "^3.1.1",
+    "typescript": "^2.9.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "yargs": "^12.0.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "yargs": "^12.0.2"
   }
 }
