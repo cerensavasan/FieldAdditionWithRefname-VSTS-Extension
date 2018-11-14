@@ -25,10 +25,20 @@ export module AddNameWithReference  {
         };
         beginAddField(witFieldModel);
     }
+    
+    export function beginGetFields(): IPromise<Contracts.WorkItemField[]> {
+        return RestClient.getClient().getFields()
+        .then<Contracts.WorkItemField[]>((fields: Contracts.WorkItemField[]) => {
+            console.log(JSON.stringify(fields));
+            return fields;
+        });
+    };
 
+    
     export function beginAddField(workItemField: Contracts.WorkItemField): IPromise<Contracts.WorkItemField> {
         return RestClient.getClient().createField(workItemField)
         .then<Contracts.WorkItemField>((field: Contracts.WorkItemField) => {
+            console.log(JSON.stringify(field));
             return field;
         });
     };

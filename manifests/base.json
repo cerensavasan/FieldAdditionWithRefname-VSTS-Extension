@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "my-first-extension",
     "publisher": "CerenSavasan",
-    "version": "1.0.116",
+    "version": "1.1.8",
     "name": "Add Field to Process with Custom Reference Name",
     "scopes": [
         "vso.profile",
@@ -11,12 +11,12 @@
     ],
     "description": "A VSTS extension that allows the user to create a new field and assign a reference name.",
     "public": false,
-    "categories": ["Plan and track"],
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
+    "categories": ["Plan and track"],
     "contributions": [
         {
             "id": "ref-name-add-hub",
@@ -26,7 +26,15 @@
             ],
             "properties": {
                 "name": "Add Field With Reference Name",
-                "uri": "index.html"
+                "uri": "index.html",
+                "authenticationSchemes": [
+                    {
+                        "type": "ms.vss-endpoint.endpoint-auth-scheme-token"
+                    },
+                    {
+                        "type": "ms.vss-endpoint.endpoint-auth-scheme-basic"
+                    }
+                ]
             }
         }
     ]

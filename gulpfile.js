@@ -35,7 +35,18 @@ if (isBundled) {
 
         VSS.require(["scripts/main"], function (Main) {
             Main.init("work-item-search-view");
-        });    
+        });
+        
+        VSS.require(["VSS/Authentication/Services"], function (VSS_Auth_Service) {
+            VSS.getAccessToken().then(function(token){
+                // Format the auth header
+                var authHeader = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
+
+                // Add token as an Authorization header to your request
+                console.log(JSON.stringify(authHeader));
+            });
+        });
+
     `;
 }
 else {
