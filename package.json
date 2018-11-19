@@ -1,7 +1,7 @@
 {
-  "name": "custom-reference-name-extension",
+  "name": "azure-devops-wit-reference-name-extension",
   "version": "1.0.0",
-  "description": "A VSTS extension",
+  "description": "Define refName value when creating a new custom field",
   "main": "index.html",
   "scripts": {
     "build": "tsc -p . && gulp",
